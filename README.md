@@ -1,9 +1,9 @@
-# RAG-Based News Summarization Project
+# RAG-Based News Summarization
 ### Overview
 This project implements a Retrieval-Augmented Generation (RAG) system for summarizing news articles from the Hugging Face cc_news dataset. It combines semantic search using Sentence Transformers and FAISS with text summarization using a BART model via LangChain. The system retrieves relevant articles based on a user query and generates concise summaries, with an evaluation framework to assess retrieval and generation performance. Used Hugging Face dataset (cc_news): https://huggingface.co/datasets/vblagoje/cc_news
 
 ### Objective
-This project uses cc_news dataset from Hugging Face to build a news summarization system. It uses:
+This project uses the cc_news dataset from Hugging Face to build a news summarization system. It uses:
 - LangChain for RAG
 - Sentence Transformers for embeddings 
 - Faiss for vector storage
@@ -69,10 +69,8 @@ ROUGE Scores: Measures overlap between generated and reference summaries.
 
 
 ### Setup:
-The notebook provides sample ground_truth and reference_summaries. Replace with actual data by inspecting articles (use the visualization cell to find relevant indices).
-Example metrics output:Evaluation Metrics: {'precision@k': 0.666, 'recall@k': 0.5, 'mrr': 0.75, 'rouge1': 0.45, 'rouge2': 0.3, 'rougeL': 0.4}
-
-
+The notebook provides sample ground truth and reference summaries. Replace with actual data by inspecting articles (use the visualization cell to find relevant indices).
+Example metrics output: Evaluation Metrics: {'precision@k': 0.666, 'recall@k': 0.5, 'mrr': 0.75, 'rouge1': 0.45, 'rouge2': 0.3, 'rougeL': 0.4}
 
 ### Evaluation Data: 
 The provided ground_truth and reference_summaries are placeholders. Create a proper evaluation dataset by inspecting articles and assigning relevant indices/summaries.
@@ -84,20 +82,20 @@ Implement additional metrics (e.g., BLEU) or visualizations (e.g., matplotlib pl
 
 
 ### Troubleshooting:
-Ensure dependencies match requirements.txt versions.
-If errors occur, recreate the virtual environment:rm -rf venv
-python -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
+Ensure dependencies match the requirements.txt versions.
+If errors occur, recreate the virtual environment: `rm -rf venv`
+`python -m venv venv`
+`source venv/bin/activate`
+`pip install -r requirements.txt`
 
 
 ### Contributing
 Contributions are welcome! Please:
 
 Fork the repository.
-Create a feature branch (git checkout -b feature/YourFeature).
-Commit changes (git commit -m "Add YourFeature").
-Push to the branch (git push origin feature/YourFeature).
+Create a feature branch (`git checkout -b feature/YourFeature`).
+Commit changes (`git commit -m "Add YourFeature"`).
+Push to the branch (`git push origin feature/YourFeature`).
 Open a pull request.
 
 
